@@ -74,6 +74,7 @@
       var SITE_URL = "http://www.sparegalos.com.ar/";
       //]]>
     </script>
+    <link rel="stylesheet" href="upwardStyles.css" />
   </head>
   <body class="header-version-2">
     <!-- Fixed navbar start -->
@@ -81,7 +82,17 @@
       <div class="navbar-top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+            <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+              <a class="navbar-brand" href="http://www.sparegalos.com.ar/">
+                <img
+                  src="http://www.sparegalos.com.ar/images/logo_transparente.png"
+                  alt="SPA Regalos"
+                  class="img-responsive"
+                  width="30"
+                />
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
               <div class="pull-left">
                 <ul class="userMenu">
                   <li class="hidden-xs">
@@ -103,7 +114,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+            <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
               <!-- no-margin no-padding"> -->
               <div class="pull-right">
                 <ul class="userMenu">
@@ -137,15 +148,6 @@
 				<button type="button" class="btn navbar-toggle" onclick="setLocation('carrito.html');"><i class="fa fa-shopping-cart"> </i></button>
 -->
 
-              <a class="navbar-brand" href="http://www.sparegalos.com.ar/">
-                <img
-                  src="http://www.sparegalos.com.ar/images/logo_transparente.png"
-                  alt="SPA Regalos"
-                  class="img-responsive"
-                  width="100"
-                />
-              </a>
-
               <!-- this part for mobile -->
               <div class="search-box pull-right hidden-lg hidden-md hidden-sm">
                 <div class="input-group">
@@ -170,169 +172,128 @@
                 </div>
               </div>
             </div>
-
-            <div class="hidden-xs col-sm-offset-5 col-sm-5 margin-top-10">
-              <div class="nav navbar-nav navbar-right no-margin no-padding">
-                <div class="pull-right">
-                  <!--
-						<ul class="userMenu">
-							<li><a href="http://www.sparegalos.com.ar/quienes-somos.html"> <i class="fa fa-star"></i> <span class="hidden-xs">Quienes Somos</span></a></li>
-							<li><a href="http://www.sparegalos.com.ar/como-hacer-pedido.html"> <i class="fa fa-shopping-cart"></i> <span class="hidden-xs">Como hacer mi pedido</span></a></li>
-							<li><a href="http://www.sparegalos.com.ar/como-hacer-pedido.html"> <i class="fa fa-download"></i> <span class="hidden-xs">Lista de Precios</span></a></li>
-							< !--
-							<li><a href="http://www.sparegalos.com.ar/contacto.php"> <i class="fa fa-envelope"></i> Contáctenos</a></li>
-							-- >
-						</ul>
-					-->
-                </div>
-
-                <div class="row">
-                  <div class="pull-right col-md-12">
-                    <form
-                      id="search_mini_form"
-                      action="http://www.sparegalos.com.ar/busqueda.php"
-                      method="get"
-                    >
-                      <div class="input-group">
-                        <input
-                          type="text"
-                          autocomplete="off"
-                          name="q"
-                          class="form-control input-search search"
-                          value=""
-                          placeholder="Ingresar el nombre o código a buscar..."
-                        />
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="submit">
-                            Buscar
-                          </button>
-                        </span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-      <!-- /w100 -->
 
-      <div class="w100 menuWrap">
-        <div class="container">
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="http://www.sparegalos.com.ar/bazar.html">BAZAR</a>
-              </li>
-              <li>
-                <a href="http://www.sparegalos.com.ar/resina.html">VARIOS</a>
-              </li>
-              <li><a href="http://www.sparegalos.com.ar/zinc.html">ZINC</a></li>
-              <li>
-                <a href="http://www.sparegalos.com.ar/alambre.html">ALAMBRE</a>
-              </li>
-              <li>
-                <a href="http://www.sparegalos.com.ar/oferta.html"
-                  >OFERTAS DEL MES</a
-                >
-              </li>
-              <li>
-                <a href="http://www.sparegalos.com.ar/importacion.html"
-                  >IMPORTACION DIRECTA SPG</a
-                >
-              </li>
-              <li>
-                <a href="http://www.sparegalos.com.ar/ofertas-navidad.html"
-                  >OFERTAS OTOÑO/INVIERNO</a
-                >
-              </li>
-              <li>
-                <a
-                  href="http://www.sparegalos.com.ar/etiquetas-autoadhesivas-stickers.html"
-                  >CALCOS</a
-                >
-              </li>
-            </ul>
 
-            <div class="nav navbar-nav navbar-right hidden-xs">
-              <div id="inc_carrito_header">
-                <div class="dropdown cartMenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-shopping-cart"></i>
-                    <span class="cartRespons">Pedido ($ 0,00)</span>
-                    <b class="caret"></b
-                  ></a>
-
-                  <div class="dropdown-menu col-lg-12 col-xs-12 col-md-4">
-                    <div class="w100 miniCartTable scroll-pane">
-                      <table>
-                        <tbody></tbody>
-                      </table>
-                    </div>
-                    <!--/.miniCartTable-->
-
-                    <div class="miniCartFooter text-right">
-                      <h3 class="text-right subtotal">Subtotal: $ 0,00</h3>
-                      <a
-                        href="http://www.sparegalos.com.ar/carrito.html"
-                        class="btn btn-sm btn-primary btn-block"
-                      >
-                        <i class="fa fa-shopping-cart"> </i> Ver Pedido
-                      </a>
-                    </div>
-                    <!--/.miniCartFooter-->
-                  </div>
-                  <!--/.dropdown-menu-->
-                </div>
-                <!--/.cartMenu-->
-              </div>
-
-              <div class="search-box visible-xs">
-                <div class="input-group">
-                  <button class="btn btn-nobg getFullSearch" type="button">
-                    <i class="fa fa-search"> </i>
-                  </button>
-                </div>
-                <!-- /input-group -->
-              </div>
-              <!--/.search-box -->
-            </div>
-            <!--/.navbar-nav hidden-xs-->
-
-            <!--- this part will be hidden for mobile version -->
-          </div>
-          <!--/.nav-collapse -->
-        </div>
-        <!--/.container -->
-
-        <form
-          id="search_mini_form_mobile"
-          action="http://www.sparegalos.com.ar/busqueda.php"
-          method="get"
-        >
-          <div class="search-full text-right">
-            <a class="pull-right search-close">
-              <i class="fa fa-times-circle"> </i
-            ></a>
-            <div class="searchInputBox pull-right">
+      <div class="row" id="new-row">
+        <div class="pull-left col-md-6">
+          <form
+            id="buscar"
+            action="http://www.sparegalos.com.ar/busqueda.php"
+            method="get"
+          >
+            <div class="input-group">
               <input
-                type="search"
+                type="text"
                 autocomplete="off"
                 name="q"
-                class="search-input search"
+                class="form-control input-search search"
                 value=""
                 placeholder="Ingresar el nombre o código a buscar..."
               />
-              <button class="btn-nobg search-btn" type="submit">
-                <i class="fa fa-search"> </i>
-              </button>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Buscar</button>
+              </span>
             </div>
+          </form>
+        </div>
+        <div class="pull-right col-md-2">
+          <div id="inc_carrito_header">
+            <div class="dropdown cartMenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="cartRespons">Pedido ($ 0,00)</span>
+                <b class="caret"></b
+              ></a>
+
+              <div class="dropdown-menu col-lg-12 col-xs-12 col-md-4">
+                <div class="w100 miniCartTable scroll-pane">
+                  <table>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <!--/.miniCartTable-->
+
+                <div class="miniCartFooter text-right">
+                  <h3 class="text-right subtotal">Subtotal: $ 0,00</h3>
+                  <a
+                    href="http://www.sparegalos.com.ar/carrito.html"
+                    class="btn btn-sm btn-primary btn-block"
+                  >
+                    <i class="fa fa-shopping-cart"> </i> Ver Pedido
+                  </a>
+                </div>
+                <!--/.miniCartFooter-->
+              </div>
+              <!--/.dropdown-menu-->
+            </div>
+            <!--/.cartMenu-->
           </div>
-          <!--/.search-full ||  search form here-->
-        </form>
+        </div>
+        <div class="pull-right col-md-4">
+          <div id="inc_carrito_header">
+            <div class="dropdown cartMenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="cartRespons">Carpetas</span>
+                <b class="caret"></b>
+              </a>
+
+              <div class="dropdown-menu col-lg-12 col-xs-12 col-md-4">
+                <div class="miniCartFooter text-right">
+                  <ul class="">
+                    <li>
+                      <a href="http://www.sparegalos.com.ar/bazar.html"
+                        >BAZAR</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://www.sparegalos.com.ar/resina.html"
+                        >VARIOS</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://www.sparegalos.com.ar/zinc.html">ZINC</a>
+                    </li>
+                    <li>
+                      <a href="http://www.sparegalos.com.ar/alambre.html"
+                        >ALAMBRE</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://www.sparegalos.com.ar/oferta.html"
+                        >OFERTAS DEL MES</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://www.sparegalos.com.ar/importacion.html"
+                        >IMPORTACION DIRECTA SPG</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.sparegalos.com.ar/ofertas-navidad.html"
+                        >OFERTAS OTOÑO/INVIERNO</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="http://www.sparegalos.com.ar/etiquetas-autoadhesivas-stickers.html"
+                        >CALCOS</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!--/.miniCartFooter-->
+              </div>
+              <!--/.dropdown-menu-->
+            </div>
+            <!--/.cartMenu-->
+          </div>
+        </div>
       </div>
-      <!--/.w100-full-->
     </div>
     <!-- /.Fixed navbar  -->
 

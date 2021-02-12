@@ -1,0 +1,9 @@
+.navbar-top,
+#new-row {
+    background: #d79d23;
+    /* background: #f07c00; */
+}
+
+#buscar{
+    margin: 10px;
+}
